@@ -281,12 +281,13 @@ nav.search_filters>ul li {
 /* MOBILE MED */
 @media screen and (max-width: 552px) {
 
-    /* .debug .sidebar {
+
+    .sidebar {
         width: 50px;
     }
 
-    .debug .playlist_container {
+    .playlist_container {
         width: calc(100% - 50px);
-    } */
+    }
 
 }
