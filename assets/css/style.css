@@ -33,6 +33,10 @@ body {
     height: 92px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* #endregion GLOBAL RULES */
 
 /* #region UTILITIES */
@@ -47,6 +51,11 @@ body {
 
 .col-2 {
     width: calc(100% / 12 * 2);
+}
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
 }
 
 /* #endregion UTILITIES */
@@ -64,6 +73,14 @@ body {
 
 .debug .playlist_container {
     background-color: hsla(271, 76%, 53%, 0.5);
+}
+
+.debug nav.search_filters {
+    background-color: yellow;
+}
+
+.debug nav.search_filters ul li {
+    border: 1px solid blueviolet;
 }
 
 .debug .controls_container {
@@ -89,11 +106,43 @@ body {
 
 /* #endregion DEBG */
 
+/* #region TOP NAVBAR */
+
+nav.search_filters ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav.search_filters ul li {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+nav.search_filters>ul li a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+/* nav.search_filters>ul li+li {
+    margin-left: 24px;
+} */
+
+nav.search_filters>ul li {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* COME SI FA IL BORDINO VERDE SOTTO IL LINK?
+CHE USARE PER FARE ANDARE A CAPO I LINK COME NELLO SCREEN? */
+
+/* #endregion TOP NAVBAR */
 
 /*---------- MEDIA QUERIES ----------*/
 
 /* TABLET MD */
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 878px) {
 
     .col-md-3 {
         width: calc(100% / 12 * 3);
