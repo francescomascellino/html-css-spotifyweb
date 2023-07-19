@@ -12,6 +12,7 @@ body {
 
 .row {
     display: flex;
+    padding: 0 1rem;
 }
 
 .app_container {
@@ -116,11 +117,12 @@ nav.search_filters ul {
 
 nav.search_filters ul li {
     display: inline-block;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 nav.search_filters>ul li a {
-    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 20px;
 }
@@ -134,10 +136,39 @@ nav.search_filters>ul li {
     margin-left: .75rem;
 }
 
-/* COME SI FA IL BORDINO VERDE SOTTO IL LINK?
-CHE USARE PER FARE ANDARE A CAPO I LINK COME NELLO SCREEN? */
+/* COME SI FA IL BORDINO VERDE SOTTO IL LINK? */
 
 /* #endregion TOP NAVBAR */
+
+/* PLAYLIST ROWS */
+
+.playlist_container h1 {
+    margin: 1.25rem 1.5rem;
+}
+
+
+/* #region ALBUM CARDS */
+
+.album_card {
+    padding: 0.5rem;
+}
+
+.album_card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: block;
+}
+
+.album_card h3,
+.album_card h5 {
+    text-align: center;
+}
+
+.album_card h3 {
+    margin: 0.5rem 0;
+}
+
+/* #endregion ALBUM CARDS */
 
 /*---------- MEDIA QUERIES ----------*/
 
