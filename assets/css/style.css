@@ -40,6 +40,56 @@ a {
 
 /* #endregion GLOBAL RULES */
 
+/* #region VARABLES */
+
+:root {
+    --sp-dark: black;
+    --sp-call-to-a: #080b12;
+    --sp-main-bg: #141922;
+    --sp-light: #ffffff;
+    --sp-sec-bg: #282828;
+    --sp-secondary: #74767b;
+    --sp-medium: #a3a3a3;
+}
+
+/* #endregion VARIABLES */
+
+/* #region COLORS */
+
+nav.sidebar {
+    background-color: var(--sp-dark);
+}
+
+.upgrade_banner {
+    background-color: var(--sp-call-to-a);
+}
+
+.upgrade_banner a.btn {
+    color: var(--sp-light);
+    border-color: var(--sp-light);
+}
+
+.playlist_container {
+    background-color: var(--sp-main-bg);
+}
+
+nav.search_filters>ul li a,
+.playlist_container span,
+.album_card h5 {
+    color: var(--sp-secondary);
+}
+
+.playlist_container h1,
+.album_card h3 {
+    color: var(--sp-light);
+}
+
+.controls_container {
+    background-color: var(--sp-sec-bg);
+}
+
+/* #endregion COLORS */
+
 /* #region UTILITIES */
 
 .d-flex {
@@ -116,6 +166,8 @@ a {
 
 /* #endregion DEBG */
 
+/* #region UPGRADE BANNER */
+
 .upgrade_banner {
     height: 5.5rem;
     align-items: center;
@@ -130,6 +182,8 @@ a {
     border-radius: 20px;
     padding: 0.5rem 2rem;
 }
+
+/* #endregion UPGRADE BANNER */
 
 /* #region TOP NAVBAR */
 
