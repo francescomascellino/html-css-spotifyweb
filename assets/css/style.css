@@ -1,5 +1,124 @@
+/* #region GLOBAL RULES */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.app_container {
+    height: calc(100vh - 92px);
+}
+
+.sidebar {
+    width: 233px;
+    height: 100%;
+}
+
+.playlist_container {
+    width: calc(100% - 233px);
+    overflow: auto;
+}
+
+.controls_container {
+    z-index: 10;
+    height: 92px;
+}
+
+/* #endregion GLOBAL RULES */
+
+/* #region UTILITIES */
+
+.d-flex {
+    display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+/* #endregion UTILITIES */
+
+/* #region DEBUG */
+
+.debug .app_container {
+    border: 1px solid red;
+    background-color: bisque;
+}
+
+.debug .sidebar {
+    background-color: yellowgreen;
+}
+
+.debug .playlist_container {
+    background-color: hsla(271, 76%, 53%, 0.5);
+}
+
+.debug .controls_container {
+    background-color: gray;
+}
+
+.debug p {
+    border: 1px dashed black;
+}
+
+/* DEBUG MEDIA QUERIES */
+@media screen and (max-width: 552px) {
+
+    .debug .sidebar {
+        width: 50px;
+    }
+
+    .debug .playlist_container {
+        width: calc(100% - 50px);
+    }
+
+}
+
+/* #endregion DEBG */
+
+
+/*---------- MEDIA QUERIES ----------*/
+
+/* TABLET MD */
+@media screen and (max-width: 868px) {
+
+    .col-md-3 {
+        width: calc(100% / 12 * 3);
+    }
+
+}
+
+/* MOBILE BIG */
+@media screen and (max-width: 639px) {
+
+    .col-sm-6 {
+        width: calc(100% / 12 *6);
+    }
+
+}
+
+/* MOBILE MED */
+@media screen and (max-width: 552px) {
+
+    /* .debug .sidebar {
+        width: 50px;
+    }
+
+    .debug .playlist_container {
+        width: calc(100% - 50px);
+    } */
+
 }
