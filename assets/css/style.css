@@ -80,6 +80,11 @@ a {
     background-color: black;
 }
 
+.debug .btn {
+    border-color: white;
+    color: white;
+}
+
 .debug nav.search_filters {
     background-color: yellow;
 }
@@ -113,6 +118,17 @@ a {
 
 .upgrade_banner {
     height: 5.5rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+}
+
+.upgrade_banner a.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
 }
 
 /* #region TOP NAVBAR */
