@@ -76,6 +76,10 @@ a {
     background-color: hsla(271, 76%, 53%, 0.5);
 }
 
+.debug .upgrade_banner {
+    background-color: black;
+}
+
 .debug nav.search_filters {
     background-color: yellow;
 }
@@ -106,6 +110,10 @@ a {
 }
 
 /* #endregion DEBG */
+
+.upgrade_banner {
+    height: 5.5rem;
+}
 
 /* #region TOP NAVBAR */
 
@@ -142,10 +150,16 @@ nav.search_filters>ul li {
 
 /* PLAYLIST ROWS */
 
-.playlist_container h1 {
+.playlist_container h1,
+.playlist_container span {
     margin: 1.25rem 1.5rem;
 }
 
+.playlist_container span {
+    font-size: 0.83rem;
+    font-weight: bold;
+    display: block;
+}
 
 /* #region ALBUM CARDS */
 
@@ -157,6 +171,10 @@ nav.search_filters>ul li {
     width: 100%;
     aspect-ratio: 1 / 1;
     display: block;
+}
+
+.album_card img.rounded {
+    border-radius: 50%;
 }
 
 .album_card h3,
