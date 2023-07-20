@@ -24,8 +24,8 @@ body {
 
 .sidebar {
     width: 233px;
-    /* height: 100%; */
     height: calc(100vh - 92px);
+    overflow: hidden;
 }
 
 .playlist_container {
@@ -68,10 +68,6 @@ nav.sidebar {
     color: var(--sp-secondary);
 }
 
-.navigation svg path {
-    fill: var(--sp-medium);
-}
-
 .upgrade_banner {
     background-color: var(--sp-call-to-a);
 }
@@ -93,7 +89,12 @@ nav.search_filters>ul li a,
 
 .playlist_container h1,
 .album_card h3,
-.user_playlists h4 {
+.user_playlists h4,
+nav.search_filters>ul li a:hover,
+ul.custom_play li a:hover,
+.new_play:hover,
+.nav_bottom a:hover,
+.user_panel span {
     color: var(--sp-light);
 }
 
@@ -106,6 +107,10 @@ nav.search_filters>ul li a,
     color: var(--sp-light);
 }
 
+.navigation svg path {
+    fill: var(--sp-medium);
+}
+
 .navigation a:hover svg path {
     fill: var(--sp-light);
 }
@@ -115,34 +120,16 @@ nav.search_filters>ul li a,
     color: var(--sp-dark);
 }
 
-.new_play:hover .add_play {
-    background-color: var(--sp-light);
-}
-
-nav.search_filters>ul li a:hover,
-ul.custom_play li a:hover,
-.new_play:hover {
-    color: var(--sp-light);
-}
-
-.nav_bottom a:hover {
-    color: var(--sp-light);
-}
-
-hr {
-    background-color: var(--sp-secondary);
-}
-
 .user_avatar {
     background-color: var(--sp-medium);
 }
 
-.user_avatar svg path {
-    fill: var(--sp-light);
+.new_play:hover .add_play {
+    background-color: var(--sp-light);
 }
 
-.user_panel span {
-    color: var(--sp-light);
+hr {
+    background-color: var(--sp-secondary);
 }
 
 /* #endregion COLORS */
@@ -254,7 +241,6 @@ hr {
 
 nav.sidebar>.container>.row {
     height: 100%;
-    /* overflow-y: auto; */
 }
 
 nav.sidebar>.container {
@@ -319,7 +305,9 @@ nav.sidebar>.container {
     margin-right: 0.2rem;
 }
 
+/* DA FIXARE */
 .user_play_wrap {
+    max-height: 35em;
     overflow-y: auto;
 }
 
@@ -378,16 +366,6 @@ hr {
     left: 0;
 }
 
-/* UPGRADE BANNER POSITION FIXED */
-/* .upgrade_banner {
-    position: fixed;
-    width: calc(100% - 233px);
-}
-
-.search_filters {
-    margin-top: 5.5rem;
-} */
-
 .upgrade_banner a.btn {
     display: inline-block;
     text-transform: uppercase;
@@ -417,10 +395,6 @@ nav.search_filters>ul li a {
     font-weight: 500;
     line-height: 20px;
 }
-
-/* nav.search_filters>ul li+li {
-    margin-left: 24px;
-} */
 
 nav.search_filters>ul li {
     margin-right: .75rem;
