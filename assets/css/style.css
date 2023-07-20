@@ -350,7 +350,11 @@ hr {
     margin-right: .5rem;
 }
 
-
+.user_avatar img {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
 
 .user_panel span {
     font-weight: bold;
