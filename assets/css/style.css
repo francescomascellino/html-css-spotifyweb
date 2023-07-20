@@ -53,6 +53,7 @@ a {
     --sp-sec-bg: #282828;
     --sp-secondary: #74767b;
     --sp-medium: #a3a3a3;
+    --sp-highlight: #adff2f;
 }
 
 /* #endregion VARIABLES */
@@ -61,6 +62,10 @@ a {
 
 nav.sidebar {
     background-color: var(--sp-dark);
+}
+
+.sidebar a {
+    color: var(--sp-secondary);
 }
 
 .upgrade_banner {
@@ -218,6 +223,19 @@ nav.sidebar>.container {
 
 .logo_sm {
     display: none;
+}
+
+.navigation a {
+    display: inline-block;
+    font-weight: bold;
+    border-left: 3px solid transparent;
+    margin-left: -1rem;
+    padding-left: 1rem;
+}
+
+.navigation a:hover {
+    border-left: 3px solid var(--sp-highlight);
+    color: var(--sp-medium);
 }
 
 /* #endregion SIDEBAR */
@@ -395,7 +413,7 @@ section.container span {
     }
 
     .logo_container {
-        padding: 0.1rem 0;
+        padding: 0.2rem;
     }
 
     .logo_lg {
@@ -404,6 +422,15 @@ section.container span {
 
     .logo_sm {
         display: block;
+    }
+
+    .navigation {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .hide_sm {
+        display: none;
     }
 
 }
