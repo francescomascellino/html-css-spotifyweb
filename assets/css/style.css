@@ -10,9 +10,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.container {
+    padding: 0 1rem;
+}
+
 .row {
     display: flex;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
 }
 
 .app_container {
@@ -237,9 +241,9 @@ nav.search_filters>ul li {
 
 /* PLAYLIST ROWS */
 
-.playlist_container h1,
-.playlist_container span {
-    margin: 1.25rem 1.5rem;
+section.container h1,
+section.container span {
+    margin: 1.25rem 0.5rem;
 }
 
 .playlist_container span {
