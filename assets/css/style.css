@@ -103,6 +103,16 @@ nav.search_filters>ul li a,
     flex-wrap: wrap;
 }
 
+.f-col,
+.nav_top,
+.nav_bottom {
+    flex-direction: column;
+}
+
+.just-btw {
+    justify-content: space-between;
+}
+
 .col-2 {
     width: calc(100% / 12 * 2);
 }
@@ -127,6 +137,10 @@ nav.search_filters>ul li a,
 
 .debug .sidebar {
     background-color: yellowgreen;
+}
+
+.debug .row {
+    border: 2px dashed darkblue;
 }
 
 .debug .playlist_container {
@@ -158,6 +172,11 @@ nav.search_filters>ul li a,
     border: 1px dashed white;
 }
 
+.debug .nav_top,
+.debug .nav_bottom {
+    background-color: beige;
+}
+
 /* DEBUG MEDIA QUERIES */
 @media screen and (max-width: 552px) {
 
@@ -172,6 +191,36 @@ nav.search_filters>ul li a,
 }
 
 /* #endregion DEBG */
+
+/* #region SIDEBAR */
+
+nav.sidebar>.container>.row {
+    height: 100%;
+}
+
+nav.sidebar>.container {
+    height: 100%;
+}
+
+.nav_top,
+.nav_bottom {
+    width: 100%;
+}
+
+.logo_container {
+    padding: 1rem 0;
+}
+
+.logo_lg {
+    width: 75%;
+    display: block;
+}
+
+.logo_sm {
+    display: none;
+}
+
+/* #endregion SIDEBAR */
 
 /* #region UPGRADE BANNER */
 
@@ -337,8 +386,24 @@ section.container span {
         width: 50px;
     }
 
+    .container {
+        padding: 0 0.25rem;
+    }
+
     .playlist_container {
         width: calc(100% - 50px);
+    }
+
+    .logo_container {
+        padding: 0.1rem 0;
+    }
+
+    .logo_lg {
+        display: none;
+    }
+
+    .logo_sm {
+        display: block;
     }
 
 }
