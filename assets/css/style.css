@@ -68,6 +68,10 @@ nav.sidebar {
     color: var(--sp-secondary);
 }
 
+.navigation svg path {
+    fill: var(--sp-medium);
+}
+
 .upgrade_banner {
     background-color: var(--sp-call-to-a);
 }
@@ -100,6 +104,10 @@ nav.search_filters>ul li a,
 .navigation a:hover {
     border-left: 3px solid var(--sp-highlight);
     color: var(--sp-light);
+}
+
+.navigation a:hover svg path {
+    fill: var(--sp-light);
 }
 
 .add_play {
@@ -260,7 +268,7 @@ nav.sidebar>.container {
     width: 1rem;
 } */
 
-.navigation a img {
+.navigation a svg {
     display: inline-block;
     width: 1.5rem;
     vertical-align: middle;
