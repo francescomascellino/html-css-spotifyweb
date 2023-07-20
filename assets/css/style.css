@@ -102,7 +102,17 @@ nav.search_filters>ul li a,
     color: var(--sp-medium);
 }
 
-ul.custom_play li a:hover {
+.add_play {
+    background-color: var(--sp-secondary);
+    color: var(--sp-dark);
+}
+
+.new_play:hover .add_play {
+    background-color: var(--sp-medium);
+}
+
+ul.custom_play li a:hover,
+.new_play:hover {
     color: var(--sp-medium);
 }
 
@@ -254,6 +264,21 @@ nav.sidebar>.container {
 .user_playlists h4 {
     text-transform: uppercase;
     margin: 0.5rem 0;
+}
+
+.new_play {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.add_play {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.2rem;
 }
 
 .user_play_wrap {
