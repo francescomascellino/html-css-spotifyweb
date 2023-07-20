@@ -112,6 +112,10 @@ nav.search_filters>ul li a,
     padding: 0;
 }
 
+.rounded {
+    border-radius: 50%;
+}
+
 /* #endregion UTILITIES */
 
 /* #region DEBUG */
@@ -265,10 +269,6 @@ section.container span {
     display: block;
 }
 
-.album_card img.rounded {
-    border-radius: 50%;
-}
-
 .album_card h3,
 .album_card h5 {
     text-align: center;
@@ -276,6 +276,29 @@ section.container span {
 
 .album_card h3 {
     margin: 0.5rem 0;
+}
+
+.cover_wrapper {
+    position: relative;
+}
+
+.play_hov {
+    background-color: var(--sp-call-to-a);
+    color: var(--sp-light);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: var(--sp-light);
+    display: none;
+}
+
+.cover_wrapper:hover .play_hov {
+    display: flex;
 }
 
 /* #endregion ALBUM CARDS */
