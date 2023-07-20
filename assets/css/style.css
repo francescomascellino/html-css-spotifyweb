@@ -24,7 +24,8 @@ body {
 
 .sidebar {
     width: 233px;
-    height: 100%;
+    /* height: 100%; */
+    height: calc(100vh - 92px);
 }
 
 .playlist_container {
@@ -33,7 +34,6 @@ body {
 }
 
 .controls_container {
-    z-index: 10;
     height: 92px;
 }
 
@@ -125,6 +125,26 @@ ul.custom_play li a:hover,
     color: var(--sp-light);
 }
 
+.nav_bottom a:hover {
+    color: var(--sp-light);
+}
+
+hr {
+    background-color: var(--sp-secondary);
+}
+
+.user_avatar {
+    background-color: var(--sp-medium);
+}
+
+.user_avatar svg path {
+    fill: var(--sp-light);
+}
+
+.user_panel span {
+    color: var(--sp-light);
+}
+
 /* #endregion COLORS */
 
 /* #region UTILITIES */
@@ -145,6 +165,10 @@ ul.custom_play li a:hover,
 
 .just-btw {
     justify-content: space-between;
+}
+
+.align-cent {
+    align-items: center;
 }
 
 .col-2 {
@@ -230,6 +254,7 @@ ul.custom_play li a:hover,
 
 nav.sidebar>.container>.row {
     height: 100%;
+    /* overflow-y: auto; */
 }
 
 nav.sidebar>.container {
@@ -264,10 +289,6 @@ nav.sidebar>.container {
     padding-left: 1rem;
 }
 
-/* .navigation a i {
-    width: 1rem;
-} */
-
 .navigation a svg {
     display: inline-block;
     width: 1.5rem;
@@ -299,16 +320,39 @@ nav.sidebar>.container {
 }
 
 .user_play_wrap {
-    height: 14rem;
-}
-
-.user_play_wrap {
     overflow-y: auto;
 }
 
 ul.custom_play li a {
     display: inline-block;
-    margin: 0.2rem 0;
+    margin: 0.25rem 0;
+    font-weight: bold;
+}
+
+.nav_bottom a {
+    display: inline-block;
+    padding: 0.25rem 0;
+}
+
+hr {
+    height: 1px;
+    border: none;
+}
+
+.user_panel {
+    margin: 0.5rem 0;
+}
+
+.user_avatar {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+
+
+.user_panel span {
     font-weight: bold;
 }
 
@@ -490,6 +534,10 @@ section.container span {
         padding: 0.2rem;
     }
 
+    .hide_sm {
+        display: none;
+    }
+
     .logo_sm {
         display: block;
     }
@@ -499,8 +547,16 @@ section.container span {
         text-align: center;
     }
 
-    .hide_sm {
-        display: none;
+    .nav_bottom {
+        text-align: center;
+    }
+
+    .user_panel {
+        justify-content: center;
+    }
+
+    .user_avatar {
+        margin-right: 0;
     }
 
 }
