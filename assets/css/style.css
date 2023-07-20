@@ -266,10 +266,6 @@ nav.sidebar>.container {
     vertical-align: middle;
 }
 
-img {
-    filter: grayscale(1);
-}
-
 .navigation a span {
     margin-left: 0.2rem;
 }
