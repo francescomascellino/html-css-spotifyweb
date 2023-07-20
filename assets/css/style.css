@@ -99,21 +99,22 @@ nav.search_filters>ul li a,
 
 .navigation a:hover {
     border-left: 3px solid var(--sp-highlight);
-    color: var(--sp-medium);
+    color: var(--sp-light);
 }
 
 .add_play {
-    background-color: var(--sp-secondary);
+    background-color: var(--sp-medium);
     color: var(--sp-dark);
 }
 
 .new_play:hover .add_play {
-    background-color: var(--sp-medium);
+    background-color: var(--sp-light);
 }
 
+nav.search_filters>ul li a:hover,
 ul.custom_play li a:hover,
 .new_play:hover {
-    color: var(--sp-medium);
+    color: var(--sp-light);
 }
 
 /* #endregion COLORS */
@@ -248,13 +249,25 @@ nav.sidebar>.container {
 .navigation a {
     display: inline-block;
     font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
     border-left: 3px solid transparent;
     margin-left: -1rem;
     padding-left: 1rem;
 }
 
-.navigation a i {
+/* .navigation a i {
     width: 1rem;
+} */
+
+.navigation a img {
+    display: inline-block;
+    width: 1.5rem;
+    vertical-align: middle;
+}
+
+img {
+    filter: grayscale(1);
 }
 
 .navigation a span {
