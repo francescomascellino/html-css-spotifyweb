@@ -103,7 +103,7 @@ ul.custom_play li a:hover,
 }
 
 .navigation a:hover {
-    border-left: 3px solid var(--sp-highlight);
+    border-color: var(--sp-highlight);
     color: var(--sp-light);
 }
 
@@ -387,6 +387,18 @@ nav.search_filters ul {
 nav.search_filters ul li {
     display: inline-block;
     margin: 1.25rem 0;
+    position: relative;
+}
+
+nav.search_filters>ul li:first-of-type:after {
+    content: "";
+    width: 2rem;
+    position: absolute;
+    border-bottom: 3px solid var(--sp-highlight);
+    margin-top: 2px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav.search_filters>ul li a {
