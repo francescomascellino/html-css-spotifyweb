@@ -16,7 +16,6 @@ body {
 
 .row {
     display: flex;
-    /* padding: 0 1rem; */
 }
 
 .app_container {
@@ -239,7 +238,7 @@ nav.search_filters>ul li {
 
 /* #endregion TOP NAVBAR */
 
-/* PLAYLIST ROWS */
+/* #region PLAYLIST SECTIONS */
 
 section.container h1,
 section.container span {
@@ -251,6 +250,8 @@ section.container span {
     font-weight: bold;
     display: block;
 }
+
+/* #endregion PLAYLIST SECTIONS */
 
 /* #region ALBUM CARDS */
 
@@ -281,7 +282,8 @@ section.container span {
 
 /*---------- MEDIA QUERIES ----------*/
 
-/* TABLET MD */
+/* #region TABLET MD */
+
 @media screen and (max-width: 878px) {
 
     .col-md-3 {
@@ -290,7 +292,10 @@ section.container span {
 
 }
 
-/* MOBILE BIG */
+/* #endregion TABLET MD */
+
+/* #region MOBILE BIG */
+
 @media screen and (max-width: 639px) {
 
     .col-sm-6 {
@@ -299,7 +304,10 @@ section.container span {
 
 }
 
-/* MOBILE MED */
+/* #endregion MOBILE BIG */
+
+/* #region MOBILE MED */
+
 @media screen and (max-width: 552px) {
 
     .sidebar {
@@ -311,3 +319,5 @@ section.container span {
     }
 
 }
+
+/* #endregion MOBILE MED */
