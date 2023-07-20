@@ -281,7 +281,6 @@ nav.search_filters>ul li {
 /* MOBILE MED */
 @media screen and (max-width: 552px) {
 
-
     .sidebar {
         width: 50px;
     }
