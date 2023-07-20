@@ -97,6 +97,15 @@ nav.search_filters>ul li a,
     background-color: var(--sp-sec-bg);
 }
 
+.navigation a:hover {
+    border-left: 3px solid var(--sp-highlight);
+    color: var(--sp-medium);
+}
+
+ul.custom_play li a:hover {
+    color: var(--sp-medium);
+}
+
 /* #endregion COLORS */
 
 /* #region UTILITIES */
@@ -242,11 +251,6 @@ nav.sidebar>.container {
     margin-left: 0.2rem;
 }
 
-.navigation a:hover {
-    border-left: 3px solid var(--sp-highlight);
-    color: var(--sp-medium);
-}
-
 .user_playlists h4 {
     text-transform: uppercase;
     margin: 0.5rem 0;
@@ -260,8 +264,10 @@ nav.sidebar>.container {
     overflow-y: auto;
 }
 
-.custom_play li {
-    margin: 1rem 0;
+ul.custom_play li a {
+    display: inline-block;
+    margin: 0.2rem 0;
+    font-weight: bold;
 }
 
 /* #endregion SIDEBAR */
