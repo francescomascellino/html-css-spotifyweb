@@ -89,6 +89,7 @@ nav.search_filters>ul li a,
 
 .playlist_container h1,
 .album_card h3,
+.play_hov,
 .user_playlists h4,
 nav.search_filters>ul li a:hover,
 ul.custom_play li a:hover,
@@ -473,7 +474,6 @@ section.container span {
 
 .play_hov {
     background-color: var(--sp-call-to-a);
-    color: var(--sp-light);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -481,8 +481,7 @@ section.container span {
     left: 0;
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
-    color: var(--sp-light);
+    font-size: 3rem;
     display: none;
 }
 
@@ -502,6 +501,10 @@ section.container span {
         width: calc(100% / 12 * 3);
     }
 
+    .play_hov {
+        font-size: 2rem;
+    }
+
 }
 
 /* #endregion TABLET MD */
@@ -512,6 +515,10 @@ section.container span {
 
     .col-sm-6 {
         width: calc(100% / 12 *6);
+    }
+
+    .play_hov {
+        font-size: 3rem;
     }
 
 }
@@ -532,6 +539,10 @@ section.container span {
 
     .playlist_container {
         width: calc(100% - 50px);
+    }
+
+    .play_hov {
+        font-size: 4rem;
     }
 
     .logo_container {
