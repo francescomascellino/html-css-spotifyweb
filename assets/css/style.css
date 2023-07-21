@@ -107,12 +107,18 @@ ul.custom_play li a:hover,
     color: var(--sp-light);
 }
 
+/* SVG FILL */
 .navigation svg path {
     fill: var(--sp-medium);
 }
 
 .navigation a:hover svg path {
     fill: var(--sp-light);
+}
+
+/* IMG FILTER */
+.navigation a:hover img {
+    filter: opacity(1);
 }
 
 .add_play {
@@ -269,16 +275,24 @@ nav.sidebar>.container {
     display: inline-block;
     font-weight: bold;
     font-size: 0.8rem;
-    line-height: 1.5rem;
     border-left: 3px solid transparent;
     margin-left: -1rem;
     padding-left: 1rem;
 }
 
+/* IMG */
 .navigation a svg {
     display: inline-block;
     width: 1.5rem;
     vertical-align: middle;
+}
+
+/* IMG FILTER */
+.navigation a img {
+    display: inline-block;
+    width: 1.5rem;
+    vertical-align: middle;
+    filter: opacity(.7);
 }
 
 .navigation a span {
