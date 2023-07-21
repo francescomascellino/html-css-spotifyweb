@@ -83,7 +83,9 @@ nav.sidebar {
 
 nav.search_filters>ul li a,
 .playlist_container span,
-.album_card h5 {
+.album_card h5,
+.now_pl_title a,
+.album_actions a {
     color: var(--sp-secondary);
 }
 
@@ -95,7 +97,9 @@ nav.search_filters>ul li a:hover,
 ul.custom_play li a:hover,
 .new_play:hover,
 .nav_bottom a:hover,
-.user_panel span {
+.user_panel span,
+.now_pl_title h5,
+.album_actions a:hover {
     color: var(--sp-light);
 }
 
@@ -107,6 +111,20 @@ ul.custom_play li a:hover,
     border-color: var(--sp-highlight);
     color: var(--sp-light);
 }
+
+/* .now_pl_title h5 {
+    color: var(--sp-light);
+} */
+
+/* .now_pl_title a,
+.album_actions a {
+    color: var(--sp-secondary);
+} */
+
+/* .album_actions a:hover {
+    color: var(--sp-light);
+} */
+
 
 /* SVG FILL */
 .navigation svg path {
@@ -490,6 +508,49 @@ section.container span {
 }
 
 /* #endregion ALBUM CARDS */
+
+.now_pl_left,
+.controls_middle,
+.extra_controls_right {
+    border: 1px solid red;
+    height: 100%;
+}
+
+.now_pl_left,
+.extra_controls_right {
+    width: 233px;
+}
+
+footer>.row {
+    height: 100%;
+}
+
+.now_pl_thumb {
+    width: 100%;
+}
+
+.cover_thumb img {
+    width: 3rem;
+}
+
+.now_pl_title a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.now_pl_title a:hover {
+    text-decoration: underline;
+}
+
+.album_data {
+    padding-left: 0.5rem;
+}
+
+.album_data,
+.album_actions {
+    gap: 0.5rem;
+}
 
 /*---------- MEDIA QUERIES ----------*/
 
