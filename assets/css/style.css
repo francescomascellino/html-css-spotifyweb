@@ -112,20 +112,6 @@ ul.custom_play li a:hover,
     color: var(--sp-light);
 }
 
-/* .now_pl_title h5 {
-    color: var(--sp-light);
-} */
-
-/* .now_pl_title a,
-.album_actions a {
-    color: var(--sp-secondary);
-} */
-
-/* .album_actions a:hover {
-    color: var(--sp-light);
-} */
-
-
 /* SVG FILL */
 .navigation svg path {
     fill: var(--sp-medium);
@@ -521,7 +507,6 @@ section.container span {
 .now_pl_left,
 .controls_middle,
 .extra_controls_right {
-    border: 1px solid red;
     height: 100%;
 }
 
@@ -560,6 +545,25 @@ footer>.row {
 .album_actions {
     gap: 0.5rem;
 }
+
+.now_pl_left,
+.controls_middle,
+.extra_controls_right {
+    border: 1px solid red;
+}
+
+/* .now_pl_title h5 {
+    color: var(--sp-light);
+} */
+
+/* .now_pl_title a,
+.album_actions a {
+    color: var(--sp-secondary);
+} */
+
+/* .album_actions a:hover {
+    color: var(--sp-light);
+} */
 
 /* PLAYER CONTROLS */
 
