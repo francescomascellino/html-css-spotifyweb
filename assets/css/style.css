@@ -569,7 +569,9 @@ footer>.row {
 
 /* PLAYER CONTROLS */
 
-
+.controls_middle {
+    justify-content: center;
+}
 
 /* ENTRA CONTROLS */
 
