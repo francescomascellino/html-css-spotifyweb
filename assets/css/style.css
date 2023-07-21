@@ -197,8 +197,8 @@ hr {
     border-radius: 50%;
 }
 
-.col-3 {
-    width: calc(100% / 12 * 3);
+.col-4 {
+    width: calc(100% / 12 * 4);
 }
 
 /* #endregion UTILITIES */
@@ -656,10 +656,6 @@ footer>.row {
     .now_pl_left,
     .extra_controls_right {
         width: 200px;
-    }
-
-    .controls_middle {
-        width: auto;
     }
 
 }
