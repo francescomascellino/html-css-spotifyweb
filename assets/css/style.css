@@ -99,7 +99,8 @@ ul.custom_play li a:hover,
 .nav_bottom a:hover,
 .user_panel span,
 .now_pl_title h5,
-.album_actions a:hover {
+.album_actions a:hover,
+.extra_controls_right {
     color: var(--sp-light);
 }
 
@@ -110,6 +111,19 @@ ul.custom_play li a:hover,
 .navigation a:hover {
     border-color: var(--sp-highlight);
     color: var(--sp-light);
+}
+
+.volume_bar {
+    background-color: var(--sp-secondary);
+}
+
+.volume_value,
+.volume_controller {
+    background-color: var(--sp-light);
+}
+
+.volume_bar:hover .volume_value {
+    background-color: var(--sp-highlight);
 }
 
 /* SVG FILL */
@@ -568,22 +582,22 @@ footer>.row {
 
 /* PLAYER CONTROLS */
 
-.extra_controls_right {
+/* .extra_controls_right {
     color: var(--sp-light);
-}
+} */
 
-.volume_bar {
+/* .volume_bar {
     background-color: var(--sp-secondary);
-}
+} */
 
-.volume_value,
+/* .volume_value,
 .volume_controller {
     background-color: var(--sp-light);
-}
+} */
 
-.volume_bar:hover .volume_value {
+/* .volume_bar:hover .volume_value {
     background-color: var(--sp-highlight);
-}
+} */
 
 .extra_controls_right {
     padding-right: 1rem;
