@@ -114,16 +114,16 @@ ul.custom_play li a:hover,
     color: var(--sp-light);
 }
 
-.volume_bar {
+.bar {
     background-color: var(--sp-secondary);
 }
 
-.volume_value,
-.volume_controller {
+.bar_value,
+.bar_controller {
     background-color: var(--sp-light);
 }
 
-.volume_bar:hover .volume_value {
+.bar:hover .bar_value {
     background-color: var(--sp-highlight);
 }
 
@@ -195,6 +195,10 @@ hr {
 
 .rounded {
     border-radius: 50%;
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
 }
 
 /* #endregion UTILITIES */
@@ -598,6 +602,9 @@ footer>.row {
     gap: 1rem;
 }
 
+.controls_middle .bar_value {
+    width: 35%;
+}
 
 /* ENTRA CONTROLS */
 
@@ -605,20 +612,20 @@ footer>.row {
     padding-right: 1rem;
 }
 
-.volume_bar {
+.bar {
     height: 5px;
     width: 100%;
     border-radius: 10px;
 }
 
-.volume_value {
+.bar_value {
     height: 5px;
     width: 20%;
     border-radius: 10px;
     position: relative;
 }
 
-.volume_controller {
+.bar_controller {
     border-radius: 50%;
     width: 1rem;
     height: 1rem;
@@ -629,7 +636,7 @@ footer>.row {
     display: none;
 }
 
-.volume_bar:hover .volume_controller {
+.bar:hover .bar_controller {
     display: block;
 }
 
@@ -664,6 +671,15 @@ footer>.row {
 
     .play_hov {
         font-size: 3rem;
+    }
+
+    .now_pl_left,
+    .extra_controls_right {
+        width: 200px;
+    }
+
+    .controls_middle {
+        width: auto;
     }
 
 }
@@ -717,6 +733,11 @@ footer>.row {
 
     .user_avatar {
         margin-right: 0;
+    }
+
+    .now_pl_left,
+    .extra_controls_right {
+        width: 180px;
     }
 
 }
