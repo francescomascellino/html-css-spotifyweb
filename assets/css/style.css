@@ -332,7 +332,7 @@ nav.sidebar>.container {
 
 .user_play_wrap {
     overflow-y: auto;
-    height: calc(100vh - 410px);
+    height: calc(100vh - 405px);
 }
 
 ul.custom_play li a {
