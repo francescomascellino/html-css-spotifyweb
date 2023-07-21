@@ -332,8 +332,8 @@ nav.sidebar>.container {
 
 /* DA FIXARE */
 .user_play_wrap {
-    max-height: 35em;
     overflow-y: auto;
+    height: calc(100vh - 410px);
 }
 
 ul.custom_play li a {
