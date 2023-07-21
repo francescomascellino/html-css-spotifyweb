@@ -564,40 +564,14 @@ footer>.row {
 .now_pl_left,
 .controls_middle,
 .extra_controls_right {
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
-
-/* .now_pl_title h5 {
-    color: var(--sp-light);
-} */
-
-/* .now_pl_title a,
-.album_actions a {
-    color: var(--sp-secondary);
-} */
-
-/* .album_actions a:hover {
-    color: var(--sp-light);
-} */
 
 /* PLAYER CONTROLS */
 
-/* .extra_controls_right {
-    color: var(--sp-light);
-} */
 
-/* .volume_bar {
-    background-color: var(--sp-secondary);
-} */
 
-/* .volume_value,
-.volume_controller {
-    background-color: var(--sp-light);
-} */
-
-/* .volume_bar:hover .volume_value {
-    background-color: var(--sp-highlight);
-} */
+/* ENTRA CONTROLS */
 
 .extra_controls_right {
     padding-right: 1rem;
@@ -630,8 +604,6 @@ footer>.row {
 .volume_bar:hover .volume_controller {
     display: block;
 }
-
-/* ENTRA CONTROLS */
 
 
 /* #endregion PLAYER CONTROLS */
@@ -722,3 +694,37 @@ footer>.row {
 }
 
 /* #endregion MOBILE MED */
+
+/* COLORI DA ELIMINARE */
+
+/* .now_pl_title h5 {
+    color: var(--sp-light);
+} */
+
+/* .now_pl_title a,
+.album_actions a {
+    color: var(--sp-secondary);
+} */
+
+/* .album_actions a:hover {
+    color: var(--sp-light);
+} */
+
+/* PLAYER CONTROLS */
+
+/* .extra_controls_right {
+    color: var(--sp-light);
+} */
+
+/* .volume_bar {
+    background-color: var(--sp-secondary);
+} */
+
+/* .volume_value,
+.volume_controller {
+    background-color: var(--sp-light);
+} */
+
+/* .volume_bar:hover .volume_value {
+    background-color: var(--sp-highlight);
+} */
