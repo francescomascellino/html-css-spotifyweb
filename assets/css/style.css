@@ -330,7 +330,6 @@ nav.sidebar>.container {
     margin-right: 0.2rem;
 }
 
-/* DA FIXARE */
 .user_play_wrap {
     overflow-y: auto;
     height: calc(100vh - 410px);
@@ -382,6 +381,7 @@ hr {
     align-items: center;
     justify-content: flex-end;
     padding: 0 1rem;
+    z-index: 10;
 }
 
 /* UPGRADE BANNER POSITION STICKY */
