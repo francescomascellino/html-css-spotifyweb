@@ -405,6 +405,11 @@ hr {
     border: 1px solid;
     border-radius: 20px;
     padding: 0.5rem 2rem;
+    transition: transform ease-in 0.2s;
+}
+
+.upgrade_banner a.btn:hover {
+    transform: scale(110%);
 }
 
 /* #endregion UPGRADE BANNER */
@@ -509,6 +514,10 @@ section.container span {
 
 /* #endregion ALBUM CARDS */
 
+/* #region PLAYER CONTROLS */
+
+/* NOW PLAYING */
+
 .now_pl_left,
 .controls_middle,
 .extra_controls_right {
@@ -551,6 +560,13 @@ footer>.row {
 .album_actions {
     gap: 0.5rem;
 }
+
+/* PLAYER CONTROLS */
+
+/* ENTRA CONTROLS */
+
+
+/* #endregion PLAYER CONTROLS */
 
 /*---------- MEDIA QUERIES ----------*/
 
