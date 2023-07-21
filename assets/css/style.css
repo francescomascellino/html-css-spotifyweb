@@ -401,7 +401,7 @@ hr {
 }
 
 .upgrade_banner a.btn:hover {
-    transform: scale(110%);
+    transform: scale(1.1);
 }
 
 /* #endregion UPGRADE BANNER */
