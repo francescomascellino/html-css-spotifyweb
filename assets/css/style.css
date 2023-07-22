@@ -561,7 +561,6 @@ footer>.row {
 }
 
 .controls_middle {
-
     color: var(--sp-light);
 }
 
@@ -574,7 +573,13 @@ footer>.row {
 .control.play {
     font-size: 2rem;
     margin: 0 0.5rem;
+    transition: transform ease-in 0.2s;
 }
+
+.control.play:hover {
+    transform: scale(1.1);
+}
+
 
 .reproduction_controls {
     justify-content: center;
