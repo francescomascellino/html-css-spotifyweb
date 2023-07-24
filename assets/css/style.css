@@ -105,6 +105,10 @@ ul.custom_play li a:hover,
     color: var(--sp-light);
 }
 
+.marker {
+    border-bottom: 3px solid transparent;
+}
+
 nav.search_filters>ul li:hover .marker {
     border-bottom: 3px solid var(--sp-highlight);
 }
@@ -448,7 +452,6 @@ nav.search_filters>ul li:first-of-type:after {
 .marker {
     width: 2rem;
     position: absolute;
-    border-bottom: 3px solid;
     margin-top: 2px;
     top: 100%;
     left: 50%;
