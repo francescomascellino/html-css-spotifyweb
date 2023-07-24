@@ -201,10 +201,6 @@ hr {
     border-radius: 50%;
 }
 
-.col-4 {
-    width: calc(100% / 12 * 4);
-}
-
 /* #endregion UTILITIES */
 
 /* #region DEBUG */
@@ -535,6 +531,7 @@ section.container span {
 .now_pl_left,
 .extra_controls_right {
     width: 233px;
+    /* width: 14%; */
 }
 
 footer>.row {
@@ -573,11 +570,8 @@ footer>.row {
 
 .controls_middle {
     padding: 1rem 0;
+    width: 30%;
     justify-content: center;
-}
-
-.controls_middle {
-    color: var(--sp-light);
 }
 
 .player_controls {
